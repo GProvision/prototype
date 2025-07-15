@@ -23,9 +23,6 @@ const root = createRoot($root);
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="auth" element={<Auth />}>
-        <Route index element={<Ingresar />} />
-      </Route>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="fichas" element={<Fichas />} />
@@ -40,7 +37,9 @@ root.render(
         <Route path="opticas/:id" element={<Optica />} />
         <Route path="opticas/:id/reporte" element={<ReporteOptica />} />
       </Route>
+      <Route path="/auth" element={<Auth />}>
+        <Route index element={<Ingresar />} />
+      </Route>
     </Routes>
-    <App />
   </BrowserRouter>
 );

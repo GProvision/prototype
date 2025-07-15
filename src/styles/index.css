@@ -8,26 +8,62 @@
   --indi-500: rgb(64, 80, 192);
   --indi-700: rgb(48, 64, 160);
   --indi-900: rgb(24, 32, 128);
+  --indi-shadow-light-thin: rgba(192, 208, 240, 0.1);
+  --indi-shadow-light-medium: rgba(192, 208, 240, 0.3);
+  --indi-shadow-light-strong: rgba(192, 208, 240, 0.5);
+  --indi-shadow-dark-thin: rgba(24, 32, 128, 0.1);
+  --indi-shadow-dark-medium: rgba(24, 32, 128, 0.3);
+  --indi-shadow-dark-strong: rgba(24, 32, 128, 0.5);
   --blue-100: rgb(187, 224, 254);
   --blue-500: rgb(32, 152, 240);
   --blue-700: rgb(24, 128, 216);
   --blue-900: rgb(12, 72, 160);
+  --blue-shadow-light-thin: rgba(187, 224, 254, 0.1);
+  --blue-shadow-light-medium: rgba(187, 224, 254, 0.3);
+  --blue-shadow-light-strong: rgba(187, 224, 254, 0.5);
+  --blue-shadow-dark-thin: rgba(12, 72, 160, 0.1);
+  --blue-shadow-dark-medium: rgba(12, 72, 160, 0.3);
+  --blue-shadow-dark-strong: rgba(12, 72, 160, 0.5);
   --cyan-100: rgb(176, 232, 240);
   --cyan-500: rgb(0, 184, 208);
   --cyan-700: rgb(0, 152, 168);
   --cyan-900: rgb(0, 104, 108);
+  --cyan-shadow-light-thin: rgba(176, 232, 240, 0.1);
+  --cyan-shadow-light-medium: rgba(176, 232, 240, 0.3);
+  --cyan-shadow-light-strong: rgba(176, 232, 240, 0.5);
+  --cyan-shadow-dark-thin: rgba(0, 104, 108, 0.1);
+  --cyan-shadow-dark-medium: rgba(0, 104, 108, 0.3);
+  --cyan-shadow-dark-strong: rgba(0, 104, 108, 0.5);
   --teal-100: rgb(176, 220, 216);
   --teal-500: rgb(0, 148, 132);
   --teal-700: rgb(0, 120, 108);
   --teal-900: rgb(0, 76, 60);
+  --teal-shadow-light-thin: rgba(176, 220, 216, 0.1);
+  --teal-shadow-light-medium: rgba(176, 220, 216, 0.3);
+  --teal-shadow-light-strong: rgba(176, 220, 216, 0.5);
+  --teal-shadow-dark-thin: rgba(0, 76, 60, 0.1);
+  --teal-shadow-dark-medium: rgba(0, 76, 60, 0.3);
+  --teal-shadow-dark-strong: rgba(0, 76, 60, 0.5);
   --green-100: rgb(200, 228, 204);
   --green-500: rgb(80, 172, 84);
   --green-700: rgb(40, 112, 60);
   --green-900: rgb(28, 76, 44);
+  --green-shadow-light-thin: rgba(200, 228, 204, 0.1);
+  --green-shadow-light-medium: rgba(200, 228, 204, 0.3);
+  --green-shadow-light-strong: rgba(200, 228, 204, 0.5);
+  --green-shadow-dark-thin: rgba(28, 76, 44, 0.1);
+  --green-shadow-dark-medium: rgba(28, 76, 44, 0.3);
+  --green-shadow-dark-strong: rgba(28, 76, 44, 0.5);
   --red-100: rgb(252, 212, 212);
   --red-500: rgb(240, 63, 52);
   --red-700: rgb(208, 44, 44);
   --red-900: rgb(180, 24, 24);
+  --red-shadow-light-thin: rgba(252, 212, 212, 0.1);
+  --red-shadow-light-medium: rgba(252, 212, 212, 0.3);
+  --red-shadow-light-strong: rgba(252, 212, 212, 0.5);
+  --red-shadow-dark-thin: rgba(180, 24, 24, 0.1);
+  --red-shadow-dark-medium: rgba(180, 24, 24, 0.3);
+  --red-shadow-dark-strong: rgba(180, 24, 24, 0.5);
 }
 
 * {
@@ -35,4 +71,49 @@
   padding: 0;
   border: none;
   box-sizing: border-box;
+  font-family: var(--font-nuni);
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--blue-100),
+    var(--indi-500)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--blue-shadow-light-thin);
+  backdrop-filter: blur(0.25rem);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 2rem var(--blue-shadow-light-medium);
+  border: 0.1rem solid var(--blue-shadow-light-medium);
 }
