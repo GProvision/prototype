@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-nuni: "Nunito", sans-serif;
+  --font-vol: "Vollkorn", serif;
+  --indi-100: rgb(192, 208, 240);
+  --indi-500: rgb(64, 80, 192);
+  --indi-700: rgb(48, 64, 160);
+  --indi-900: rgb(24, 32, 128);
+  --blue-100: rgb(187, 224, 254);
+  --blue-500: rgb(32, 152, 240);
+  --blue-700: rgb(24, 128, 216);
+  --blue-900: rgb(12, 72, 160);
+  --cyan-100: rgb(176, 232, 240);
+  --cyan-500: rgb(0, 184, 208);
+  --cyan-700: rgb(0, 152, 168);
+  --cyan-900: rgb(0, 104, 108);
+  --teal-100: rgb(176, 220, 216);
+  --teal-500: rgb(0, 148, 132);
+  --teal-700: rgb(0, 120, 108);
+  --teal-900: rgb(0, 76, 60);
+  --green-100: rgb(200, 228, 204);
+  --green-500: rgb(80, 172, 84);
+  --green-700: rgb(40, 112, 60);
+  --green-900: rgb(28, 76, 44);
+  --red-100: rgb(252, 212, 212);
+  --red-500: rgb(240, 63, 52);
+  --red-700: rgb(208, 44, 44);
+  --red-900: rgb(180, 24, 24);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
