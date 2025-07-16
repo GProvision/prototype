@@ -117,3 +117,8 @@ body {
   box-shadow: 0 0.25rem 2rem var(--blue-shadow-light-medium);
   border: 0.1rem solid var(--blue-shadow-light-medium);
 }
+
+ul,
+ol {
+  list-style: none;
+}

@@ -1,19 +1,22 @@
 #user {
+  width: 100vw;
   position: fixed;
   top: 0;
-  right: -8rem;
+  left: 50%;
   z-index: 999;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 0.5rem;
+  transform: translateX(-50%);
+  padding: 1rem;
   & a {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.05rem 1.25rem;
+    padding: 0.25rem 1.25rem;
     border: 0.2rem solid var(--blue-shadow-dark-strong);
     box-shadow: 0 0.25rem 2rem var(--blue-shadow-dark-medium);
     background-color: var(--blue-shadow-dark-medium);
@@ -23,6 +26,7 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
+
     transition: all 0.2s ease-in-out;
     &:hover {
       color: var(--blue-100);
@@ -43,16 +47,14 @@
     font-size: 1rem;
     padding: 0.25rem 1.25rem;
     cursor: pointer;
-    transform: scale(0.9);
+
     outline: none;
     transition: all 0.2s ease-in-out;
     &:hover {
       color: var(--red-500);
-      transform: scale(1);
     }
     &:focus {
       color: var(--red-500);
-      transform: scale(1);
     }
   }
   @media screen and (max-width: 768px) {
