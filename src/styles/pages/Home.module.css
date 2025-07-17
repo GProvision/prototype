@@ -32,6 +32,11 @@
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 2rem var(--blue-shadow-dark-medium);
     border: 0.1rem solid var(--blue-shadow-dark-medium);
+    & svg {
+      stroke: var(--indi-900);
+      width: 2rem;
+      height: 2rem;
+    }
     & dl {
       display: flex;
       flex-flow: row wrap;
@@ -41,10 +46,12 @@
       & dt {
         font-weight: 700;
         text-transform: uppercase;
+        color: var(--indi-900);
       }
       & dd {
         font-weight: 700;
         text-transform: uppercase;
+        color: var(--indi-900);
       }
     }
   }
@@ -72,10 +79,13 @@
     box-shadow: 0 0.25rem 2rem var(--blue-shadow-dark-medium);
     border: 0.1rem solid var(--blue-shadow-dark-medium);
     &:first-child {
-      aspect-ratio: 4/3;
+      aspect-ratio: 16/9;
+      align-self: stretch;
+      flex: auto;
     }
     &:last-child {
       aspect-ratio: 1/1;
+      align-self: center;
     }
   }
 }
