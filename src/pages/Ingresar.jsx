@@ -37,7 +37,7 @@ const Ingresar = () => {
       <picture>
         <img src="/brand.svg" alt="" />
       </picture>
-      <form onSubmit={handleSubmit(submit)}>
+      <form onSubmit={handleSubmit(submit)} autoComplete="off">
         <fieldset>
           <label htmlFor="user">
             <UserIcon fill="var(--indi-900)" width={24} height={24} />
@@ -48,6 +48,7 @@ const Ingresar = () => {
             name="user"
             placeholder="Usuario"
             {...register("user")}
+            autoComplete="off"
           />
         </fieldset>
         <fieldset>
@@ -60,6 +61,7 @@ const Ingresar = () => {
             name="password"
             placeholder="Contraseña"
             {...register("password")}
+            autoComplete="off"
           />
           <button type="button" onClick={() => setShowPassword(!showPassword)}>
             {showPassword ? (
