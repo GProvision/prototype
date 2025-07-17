@@ -24,7 +24,7 @@ const Ingresar = () => {
       toast.error("Contraseña es requerida");
       return;
     }
-    if (data.user === "admin" && data.password === "admin") {
+    if (data.user.toLowerCase().trim() === data.password.toLowerCase().trim()) {
       toast.success("Ingresando");
       access({ user: data.user });
       navigate("/");
